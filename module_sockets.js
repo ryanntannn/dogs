@@ -9,7 +9,11 @@ function initalize_sockets(http){
             console.log(`User ${client_socket.id} disconnected!`);
         });
 
-        client_socket.on('feed dog', feed_dog);
+        client_socket.on('feed dog', (data)=>{
+            feed_dog(data).then((dog) => {
+                client_socket.emit('update stats', dog);
+            });
+        });
     });
 }
 

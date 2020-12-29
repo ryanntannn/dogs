@@ -16,6 +16,5 @@ app.get('/', (res, req) =>{
 });
 
 http.listen(port, () =>{
-    // get_dog('').then(dog => console.log(dog));
     console.log(`Server starting on port: ${port}`);
 });
