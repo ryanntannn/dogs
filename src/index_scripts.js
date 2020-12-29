@@ -2,7 +2,15 @@ var socket = io();
 var stats = document.querySelector('.stats-pane');
 
 function feedDog(){
-    socket.emit('feed dog', {id: 0});
+    socket.emit('update dog', {id: 0, type: 'feed'});
+}
+
+function playDog(){
+    socket.emit('update dog', {id: 0, type: 'play'});
+}
+
+function cleanDog(){
+    socket.emit('update dog', {id: 0, type: 'clean'});
 }
 
 socket.on('update stats', res =>{
