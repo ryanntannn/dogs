@@ -14,3 +14,20 @@ body {
 	top: calc(50vh - 100px);
 	left: calc(50vw - 150px);
 }
+
+.actions-pane{
+	position: fixed;
+	bottom: 0;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	width: calc(100vw - 20px);
+	grid-gap:10px;
+	padding: 10px;
+}
+
+.actions-pane button{
+	height: 100px;
+	border: none;
+	border-radius: 30px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
