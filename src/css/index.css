@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #95d4c3;
+	padding: 0;
+	margin: 0;
+}
+
+.dog-container{
+	position: absolute;
+	top: calc(50vh - 100px);
+	left: calc(50vw - 150px);
+}

@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static('src'));
 
 app.get('/', (res, req) =>{
-    req.sendFile('');
+    req.sendFile('index.html');
 });
 
 app.listen(port, () =>{
