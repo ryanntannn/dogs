@@ -4,10 +4,12 @@
 		<link href="css/dog.css" rel="stylesheet">
 		<link href="css/index.css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+		<script src="https://kit.fontawesome.com/73b0a30830.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div class="stats-pane"></div>
+		<div class="stats-pane">
+			hunger: 1, happiness: 1, cleanlines: 1
+		</div>
 
 		<div class="dog-container">
 			<div class="body"></div>
@@ -23,11 +25,11 @@
 		  </div>
 
 		  <div class="actions-pane">
-			  <button onclick="feedDog()"></button>
+			  <button onclick="feedDog()" class="feed"><i class="fas fa-bone"></i></button>
 			  
-			  <button></button>
+			  <button class="play"><i class="far fa-futbol"></i></button>
 			  
-			  <button></button>
+			  <button class="wash"><i class="fas fa-shower"></i></button>
 		  </div>
 	</body>
 	<script src="/socket.io/socket.io.js"></script>

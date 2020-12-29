@@ -30,4 +30,20 @@ body {
 	border: none;
 	border-radius: 30px;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+	font-size: 2em;
+}
+
+.actions-pane button.feed{
+	background-color: #e97878;
+	color: #ffc2c2;
+}
+
+.actions-pane button.play{
+	background-color: #e9c578;
+	color: #fff9c2;
+}
+
+.actions-pane button.wash{
+	background-color: #78ade9;
+	color: #c2ecff;
 }
