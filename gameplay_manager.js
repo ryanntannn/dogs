@@ -16,18 +16,21 @@ function update_dog(data){
 }
 
 function feed_dog(targetDog){
+    if(targetDog.hunger == 1) return;
     increment_hunger(targetDog, 0.2);
     increment_happiness(targetDog, 0.1);
     increment_cleaniness(targetDog, -0.1);
 }
 
 function play_dog(targetDog){
+    if(targetDog.happiness == 1) return;
     increment_hunger(targetDog, -0.1);
     increment_happiness(targetDog, 0.2);
     increment_cleaniness(targetDog, -0.1);
 }
 
 function clean_dog(targetDog){
+    if(targetDog.cleaniness == 1) return;
     increment_hunger(targetDog, -0.1);
     increment_happiness(targetDog, -0.1);
     increment_cleaniness(targetDog, 0.2);
